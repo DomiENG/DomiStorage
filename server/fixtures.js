@@ -1,19 +1,19 @@
 if (Listings.find().count() === 0) {
   Listings.insert({
-    title: 'Introducing Telescope',
-    author: 'Sacha Greif',
-    url: 'http://sachagreif.com/introducing-telescope/'
+    address: '100 Apple Street',
+    price: '100',
+    owner: 'Jeff'
   });
   
   Listings.insert({
-    title: 'Meteor',
-    author: 'Tom Coleman',
-    url: 'http://meteor.com'
+    address: '200 Banana Ave',
+    price: '123',
+    owner: 'Que'
   });
   
   Listings.insert({
-    title: 'The Meteor Book',
-    author: 'Tom Coleman',
-    url: 'http://themeteorbook.com'
+    address: '123 Cat Drive',
+    price: '89',
+    owner: 'Mike'
   });
 }
