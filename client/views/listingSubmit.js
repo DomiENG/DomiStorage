@@ -9,5 +9,5 @@ Template.listingSubmit.events({
 		}
 	
 	listing._id = Listings.insert(listing);
-	Router.go('listingsList', listing); }
+	Router.go('listingPage', listing); }
 });
