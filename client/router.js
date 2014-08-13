@@ -16,6 +16,11 @@ Router.map(function() {
 		data: function() {return Listings.findOne(this.params._id);}
 		});
 
+	this.route('listingEdit', {
+		path: '/listings/:_id/edit',
+		data: function() { return Listings.findOne(this.params._id); }
+	});
+
 });
 
 var requireLogin = function(pause) {

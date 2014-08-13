@@ -20,9 +20,11 @@
                     <li>
                         <a >{{> loginButtons}}</a>
                     </li>
-                    <li>
-                        <a href="{{pathFor 'listingSubmit'}}">New Listing</a>
-                    </li>
+                    {{#if currentUser}}
+                        <li>
+                            <a href="{{pathFor 'listingSubmit'}}">New Listing</a>
+                        </li>
+                    {{/if}}
 
                 </ul>
             </div>

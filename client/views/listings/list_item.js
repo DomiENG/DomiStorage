@@ -4,4 +4,8 @@ Template.listItem.helpers({
 //    a.href = this.url;
 //    return a.hostname;
 //  }
+	ownListing: function() {
+		return this.userId == Meteor.userId();
+	}
+
 });

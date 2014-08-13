@@ -7,7 +7,12 @@ Template.listingSubmit.events({
 			price: $(e.target).find('[name=price]').val(),
 			owner: $(e.target).find('[name=owner]').val()
 		}
-	
-	listing._id = Listings.insert(listing);
-	Router.go('listingPage', listing); }
+
+		Meteor.call('listing', listing, function(error, id) {
+			if (error)
+				return alert(error.reason);
+		
+		Router.go('listingPage', {_id: id});
+		})
+	}
 });
