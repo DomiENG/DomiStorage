@@ -2,19 +2,13 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "iron-router": {},
-      "accounts-ui-bootstrap-dropdown": {}
+      "iron-router": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.8.2",
         "commit": "05415a8891ea87a00fb1e2388585f2ca5a38e0da"
-      },
-      "accounts-ui-bootstrap-dropdown": {
-        "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
-        "tag": "v0.8.3",
-        "commit": "a7af8a52e4e74db020a69b158a8f992797b8b0b0"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

@@ -1,5 +1,7 @@
 Router.configure({
-	layoutTemplate: 'layout'
+	layoutTemplate: 'layout',
+
+
 });
 
 Router.map(function() {
@@ -12,5 +14,14 @@ Router.map(function() {
 		data: function() {return Listings.findOne(this.params._id);}
 		});
 
-
 });
+
+var requireLogin = function() {
+	if (! Meteor.user()) {
+		this.render('accessDenied');
+		this.stop();
+	}
+	
+}
+
+Router.before(requireLogin, {only: 'listingSubmit'});
