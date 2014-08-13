@@ -1,5 +1,7 @@
 Router.configure({
 	layoutTemplate: 'layout',
+	loadingTemplate: 'loading',
+	waitOn: function() { return Meteor.subscribe('listings'); }
 
 
 });
@@ -16,12 +18,14 @@ Router.map(function() {
 
 });
 
-var requireLogin = function() {
-	if (! Meteor.user()) {
-		this.render('accessDenied');
-		this.stop();
-	}
-	
+var requireLogin = function(pause) {
+  if (! Meteor.user()) {
+    if (Meteor.loggingIn())
+    	this.render(this.loadingTemplate);
+		else
+			this.render('accessDenied');
+    pause();
+  }
 }
 
 Router.before(requireLogin, {only: 'listingSubmit'});
