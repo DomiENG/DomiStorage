@@ -8,7 +8,7 @@ Listings.allow({
 Listings.deny({
 	update: function(userId, listing, fieldNames) {
 	// may only edit the following two fields:
-	return (_.without(fieldNames, 'address', 'price').length > 0); }
+	return (_.without(fieldNames, 'address', 'price', 'message').length > 0); }
 });
 
 Meteor.methods({
@@ -33,7 +33,7 @@ Meteor.methods({
 		}
 
 		// pick out the whitelisted keys
-		var listing = _.extend(_.pick(listingAttributes, 'address', 'price', 'owner'), {
+		var listing = _.extend(_.pick(listingAttributes, 'address', 'price', 'message'), {
 			userId: user._id,
 			author: user.username,
 			submitted: new Date().getTime()

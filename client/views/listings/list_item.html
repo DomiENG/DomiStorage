@@ -1,7 +1,10 @@
 <template name="listItem">
   <div class="listing">
     <div class="listing-content">
-      <h3><a href="{{pathFor 'listingPage'}}">{{address}}</a><a>{{owner}}{{price}}</a></h3>
+      <h3>
+      	<a href="{{pathFor 'listingPage'}}">Address: {{address}}</a>
+      	<a>Price: {{price}}  Message: {{message}}</a>
+      </h3>
       {{#if ownListing}}<a href="{{pathFor 'listingEdit'}}">Edit</a>{{/if}}
     </div>
   </div>

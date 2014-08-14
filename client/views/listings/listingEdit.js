@@ -1,4 +1,4 @@
-Template.postEdit.events({
+Template.listingEdit.events({
   'submit form': function(e) {
     e.preventDefault();
     
@@ -6,7 +6,9 @@ Template.postEdit.events({
     
     var listingProperties = {
       address: $(e.target).find('[name=address]').val(),
-      price: $(e.target).find('[name=price]').val()
+      price: $(e.target).find('[name=price]').val(),
+      message: $(e.target).find('[name=message]').val()
+
     }
     
     Listings.update(currentListingId, {$set: listingProperties}, function(error) {

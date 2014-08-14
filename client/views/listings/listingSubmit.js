@@ -5,7 +5,7 @@ Template.listingSubmit.events({
 		var listing = {
 			address: $(e.target).find('[name=address]').val(),
 			price: $(e.target).find('[name=price]').val(),
-			owner: $(e.target).find('[name=owner]').val()
+			message: $(e.target).find('[name=message]').val()
 		}
 
 		Meteor.call('listing', listing, function(error, id) {

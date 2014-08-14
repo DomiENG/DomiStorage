@@ -22,8 +22,13 @@
                     </li>
                     {{#if currentUser}}
                         <li>
+
+                        </li>
+                            <a href="{{pathFor 'myListings'}}">My Listings</a>
+                        <li>
                             <a href="{{pathFor 'listingSubmit'}}">New Listing</a>
                         </li>
+
                     {{/if}}
 
                 </ul>

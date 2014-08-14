@@ -21,6 +21,10 @@ Router.map(function() {
 		data: function() { return Listings.findOne(this.params._id); }
 	});
 
+	this.route('myListings', {
+		path: '/myListings/'
+	});
+
 });
 
 var requireLogin = function(pause) {
