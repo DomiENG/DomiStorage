@@ -3,7 +3,11 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {},
-      "spin": {}
+      "spin": {},
+      "photo-uploader": {
+        "git": "https://github.com/pfafman/meteor-photo-uploader.git",
+        "branch": "master"
+      }
     },
     "packages": {
       "iron-router": {
@@ -15,6 +19,11 @@
         "git": "https://github.com/SachaG/meteor-spin.git",
         "tag": "v2.0.4",
         "commit": "f7b1e12a7caff1283cdb3671a393c182d0ae9862"
+      },
+      "photo-uploader": {
+        "git": "https://github.com/pfafman/meteor-photo-uploader.git",
+        "branch": "master",
+        "commit": "b73c0a9f32d33eb373746e603229e730e324c6d3"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

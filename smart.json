@@ -1,6 +1,10 @@
 {
   "packages": {
     "iron-router": {},
-    "spin": {}
+    "spin": {},
+    "photo-uploader": {
+            "git": "https://github.com/pfafman/meteor-photo-uploader.git"
+        }
   }
 }
+
