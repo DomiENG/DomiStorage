@@ -18,13 +18,14 @@
                 <ul class="nav navbar-nav navbar-right">
                     
                     <li>
-                        <a >{{> loginButtons}}</a>
+                        <a>{{> loginButtons}}</a>
                     </li>
                     {{#if currentUser}}
-                        <li>
+                        
 
-                        </li>
+                        <li>
                             <a href="{{pathFor 'myListings'}}">My Listings</a>
+                        </li>
                         <li>
                             <a href="{{pathFor 'listingSubmit'}}">New Listing</a>
                         </li>
