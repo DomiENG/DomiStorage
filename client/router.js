@@ -37,4 +37,4 @@ var requireLogin = function(pause) {
   }
 }
 
-Router.before(requireLogin, {only: 'listingSubmit'});
+Router.onBeforeAction(requireLogin, {only: 'listingSubmit'});
