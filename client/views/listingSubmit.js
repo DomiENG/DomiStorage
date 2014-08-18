@@ -11,3 +11,5 @@ Template.listingSubmit.events({
 	listing._id = Listings.insert(listing);
 	Router.go('listingPage', listing); }
 });
+
+photoUpload = new PhotoUploader([uploadButtonLabel]);
