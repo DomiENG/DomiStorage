@@ -8,4 +8,4 @@ Template.listItem.helpers({
 		return this.userId == Meteor.userId();
 	}
 
-});
+});//branch test
