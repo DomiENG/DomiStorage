@@ -1,0 +1,36 @@
+<template name="listingEdit">
+  <form class="main">
+    <div class="control-group">
+        <label class="control-label" for="address">Address</label>
+        <div class="controls">
+            <input name="address" type="text" value="{{address}}" placeholder="Your address"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="price">Price</label>
+        <div class="controls">
+            <input name="price" type="text" value="{{price}}" placeholder="Name your price"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="message">Message</label>
+        <div class="controls">
+            <textarea name="message" type="text" value="{{message}}"></textarea>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary submit"/>
+        </div>
+    </div>
+    <hr/>
+    <div class="control-group">
+        <div class="controls">
+            <a class="btn btn-danger delete" href="#">Delete post</a>
+        </div>
+    </div>
+  </form>
+</template>
