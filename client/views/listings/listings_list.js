@@ -6,7 +6,6 @@ Template.listingsList.helpers({
 
 Template.listingsList.rendered = function(){
   
-  autocompleteSearch = new google.maps.places.Autocomplete((document.getElementById('autocomplete')),{ types: ['geocode'] });
   
 
   GoogleMaps.init(
