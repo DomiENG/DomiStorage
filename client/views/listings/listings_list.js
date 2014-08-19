@@ -4,12 +4,16 @@ Template.listingsList.helpers({
   }
 });
 
-if (Meteor.isClient) {
+Template.listingsList.rendered = function(){
+  
+  autocompleteSearch = new google.maps.places.Autocomplete((document.getElementById('autocomplete')),{ types: ['geocode'] });
+  
+
   GoogleMaps.init(
     {
         'sensor': true, //optional
         //'key': 'MY-GOOGLEMAPS-API-KEY', //optional
-        //'language': 'de' //optional
+        'language': 'en' //optional
     }, 
     function(){
         var mapOptions = {
@@ -21,3 +25,7 @@ if (Meteor.isClient) {
     }
 );
 }
+
+Template.listingSubmit.events({
+
+});
