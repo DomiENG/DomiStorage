@@ -25,7 +25,7 @@ google.maps.event.addListener(marker,'click',function() {
         var mapOptions = {
             zoom: 12,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            streetViewControl: false,
+            disableDefaultUI: true,
             center: new google.maps.LatLng(39.948157624395726, -75.16712415771485)
         };
         map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
@@ -41,7 +41,13 @@ google.maps.event.addListener(marker,'click',function() {
         });
 
         google.maps.event.addListener(marker, 'click', function() {
+            map.setZoom(16);
+            map.setCenter(marker.getPosition());
             infowindow.open(map,marker);
+        });
+
+        google.maps.event.addListener(map, 'click', function() {
+            //add pin at mouse location
         });
 
         //google.maps.event.addDomListener(window, 'window', initialize);
