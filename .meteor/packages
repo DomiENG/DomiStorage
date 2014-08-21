@@ -12,5 +12,5 @@ accounts-ui
 spin
 accounts-facebook
 ui
-filepicker
 accounts-google
+loadpicker
