@@ -11,4 +11,7 @@ jquery
 accounts-ui
 spin
 accounts-facebook
+ui
+accounts-google
+loadpicker
 googlemaps

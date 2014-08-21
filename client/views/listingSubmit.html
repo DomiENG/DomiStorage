@@ -1,17 +1,9 @@
- <template name="listingSubmit">
-
-	<h1>List your space</h1>
-	  <div id="constructed-widget" value="empty" type="filepicker-dragdrop" style="display: none;">
-	  </div>
-	  <button id="exampleDropPane">Upload photo</button>
-	  <div><pre id="localDropResult"></pre></div>
-
+ <template name="listingSubmit1">
 	<form class="main">
 		<div class="control-group">
 			<label class="control-label" for="url">Address</label>
 			<div class="controls">
 				<input name="address" type="text" value="" placeholder="Your Address"/>
-				<input id="autocomplete" name="address" type="text" value="" placeholder="Your Address" onFocus="geolocate()"/>
 			</div>
 		</div>
 
@@ -23,9 +15,9 @@
 		</div>
 
 		<div class="control-group">
-			<label class="control-label" for="message">Message</label>
+			<label class="control-label" for="message">Owner</label>
 			<div class="controls">
-				<textarea name="message" type="text" value=""></textarea>
+				<textarea name="owner" type="text" value=""></textarea>
 			</div>
 		</div>
 		
