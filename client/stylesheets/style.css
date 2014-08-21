@@ -28,6 +28,13 @@ body {
 #spinner {
   height: 300px; }
 
+<<<<<<< HEAD
+=======
+.listings{
+  float: right;
+}
+
+>>>>>>> 9dfcf5532d3db46ef4e07b38baa8ee5d01649ecf
 .listing {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */

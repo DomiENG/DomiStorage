@@ -6,6 +6,10 @@
       "commit": "05415a8891ea87a00fb1e2388585f2ca5a38e0da"
     },
     "spin": {},
+<<<<<<< HEAD
     "loadpicker": {}
+=======
+    "googlemaps": {}
+>>>>>>> 9dfcf5532d3db46ef4e07b38baa8ee5d01649ecf
   }
 }
