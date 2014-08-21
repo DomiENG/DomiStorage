@@ -12,3 +12,4 @@ Template.listingSubmit.events({
 	Router.go('listingPage', listing); }
 });
 
+ 

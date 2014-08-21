@@ -16,3 +16,20 @@ Template.listingSubmit.events({
 		})
 	}
 });
+
+if (Meteor.isClient) {
+  //Session.set("widgetSet", false);
+  var key = "AXffth1RwT62d8wusHcCyz";
+
+  Template.listingSubmit.rendered = function () { 
+    //if (!Session.get("widgetSet")) {  
+      loadPicker(key);
+    //}
+  };
+
+  Template.listingSubmit.events({
+    'click button' : function () {
+      filepicker.pick();
+    }
+  });
+}
