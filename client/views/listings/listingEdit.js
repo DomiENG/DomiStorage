@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-=======
 Template.listingEdit.rendered = function(){
    autocompleteEdit = new google.maps.places.Autocomplete((document.getElementById('autocomplete')),{ types: ['geocode'] });
 };
 
-
->>>>>>> 9dfcf5532d3db46ef4e07b38baa8ee5d01649ecf
 Template.listingEdit.events({
   'submit form': function(e) {
     e.preventDefault();
