@@ -22,5 +22,5 @@ loadPicker = function(key) {
         }
         window.filepicker = d
     })(document);
-    filepicker.setKey(key)
+    filepicker.setKey("AXffth1RwT62d8wusHcCyz")
 };
