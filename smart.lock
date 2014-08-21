@@ -2,12 +2,12 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "iron-router": {},
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.8.2"
+      },
       "spin": {},
-      "photo-uploader": {
-        "git": "https://github.com/pfafman/meteor-photo-uploader.git",
-        "branch": "master"
-      }
+      "loadpicker": {}
     },
     "packages": {
       "iron-router": {
@@ -20,10 +20,10 @@
         "tag": "v2.0.4",
         "commit": "f7b1e12a7caff1283cdb3671a393c182d0ae9862"
       },
-      "photo-uploader": {
-        "git": "https://github.com/pfafman/meteor-photo-uploader.git",
-        "branch": "master",
-        "commit": "b73c0a9f32d33eb373746e603229e730e324c6d3"
+      "loadpicker": {
+        "git": "https://github.com/guido4000/loadpicker.git",
+        "tag": "v1.0.0",
+        "commit": "9f8aa83427b21e2d6279db3f018900bf09560352"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",
