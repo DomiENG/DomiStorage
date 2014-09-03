@@ -40,13 +40,13 @@ if (Meteor.isClient) {
   Session.set("widgetSet", false);
   var key = "AXffth1RwT62d8wusHcCyz";
 
-  Template.home.rendered = function ( ) { 
+  Template.listingSubmit.rendered = function ( ) { 
     if (!Session.get("widgetSet")) {  
       loadPicker(key);
     }
   };
 
-  Template.home.events({
+  Template.listingSubmit.events({
     'click button' : function () {
       filepicker.pick();
     }
